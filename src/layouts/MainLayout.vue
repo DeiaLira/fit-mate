@@ -1,8 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="mainNav">
-      <q-toolbar>
-        <q-avatar>
+      <q-toolbar class="q-pt-sm q-pb-sm">
+        <q-avatar style="width: 56px; height: 56px;">
           <img src="../assets/img/logo-fitmate-previus.png">
         </q-avatar>
         <q-toolbar-title>
@@ -14,6 +14,7 @@
           round
           icon="menu"
           aria-label="Menu"
+          size="16px"
           @click="toggleRigthDrawer"
         />
       </q-toolbar>
@@ -39,6 +40,13 @@
         />
       </q-list>
   </q-drawer>
+
+  <q-footer bordered class="mainFooter">
+    <q-tabs no-caps indicator-color="transparent" class="q-pt-sm q-pb-sm" v-model="tab">
+      <q-tab><q-icon name="home" size="32px" /></q-tab>
+      <q-tab><q-icon name="fitness_center" size="32px"/></q-tab>
+    </q-tabs>
+  </q-footer>
 
     <q-page-container>
       <router-view />
@@ -110,6 +118,11 @@ function toggleRigthDrawer () {
 
 .mainNav
   background-color: #1B1A17
+  color: #E6D5B8
+
+.mainFooter
+  background-color: #1B1A17
+  color: #E6D5B8
   
 
 </style>
