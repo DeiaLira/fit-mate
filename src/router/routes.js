@@ -16,7 +16,15 @@ const routes = [
     path: '/todayWorkout',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/TodayWorkout.vue') }
+      { path: '', component: () => import('src/pages/TodayWorkoutPage.vue') }
+    ]
+  },
+
+  {
+    path: '/selectWorkout',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/SelectWorkoutPage.vue') }
     ]
   },
 

@@ -19,7 +19,7 @@
   
   <script setup>
   defineOptions({
-    name: 'HomePage'
+    name: 'TodayWorkoutPage'
   });
   </script>
   
