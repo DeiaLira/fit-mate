@@ -21,24 +21,25 @@
     </q-header>
 
     <q-drawer
+      class="floatMenu"
       side="right"
       v-model="rigthDrawerOpen"
       show-if-above
-      bordered
     >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
 
-        <EssentialLink
-          v-for="link in linksList"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
+    <q-item-label header>
+      Essential Links
+    </q-item-label>
+
+    <q-list>
+      <q-btn class="options full-width q-pt-md q-pb-md" label="Minha Conta" />
+      <q-btn class="options full-width q-pt-md q-pb-md" label="Alterar Treinos" />
+      <q-btn class="options full-width q-pt-md q-pb-md" label="Sair" />
+    </q-list>
+
+    <q-item-label class="full-width text-center fixed-bottom q-mb-xl">
+      Create for @LiraDevelopers - 2024
+    </q-item-label>
   </q-drawer>
 
   <q-footer bordered class="mainFooter">
@@ -123,6 +124,11 @@ function toggleRigthDrawer () {
 .mainFooter
   background-color: #1B1A17
   color: #E6D5B8
+
+.floatMenu
+  background-color: #E6D5B8
+  .options
+    background-color: #CCA981
   
 
 </style>
