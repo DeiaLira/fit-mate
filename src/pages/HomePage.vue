@@ -1,6 +1,6 @@
 <template>
     <q-page class="flex content">
-      <section class="mainContent q-gutter-y-xl">
+      <section class="mainContent fixed-center q-gutter-y-xl">
         <p class="text-h5 text-weight-light text-center">Treino de hoje:</p>
         <q-btn push class="mainWorkout full-width q-pt-xl q-pb-xl q-mb-xl text-h5 text-weight-light" rounded label="Treino A" />
         <q-btn class="newWorkout full-width q-pt-md q-pb-md" unelevated rounded label="Selecionar um novo treino" />
