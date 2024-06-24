@@ -9,7 +9,6 @@
                 <q-btn class="options full-width q-pt-lg q-pb-lg text-h6 text-weight-light" label="Treino D" no-caps />
             </section>
         </section>
-      
     </q-page>
   </template>
 

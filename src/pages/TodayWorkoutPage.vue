@@ -37,7 +37,6 @@
                 <q-btn class="pushBtn full-width q-pt-md q-pb-md q-mt-lg" unelevated rounded label="Concluir treino" />
             </section>
         </section>
-      
     </q-page>
   </template>
   

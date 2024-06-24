@@ -21,6 +21,14 @@ const routes = [
   },
 
   {
+    path: '/videoExecution',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/VideoExecutionPage.vue') }
+    ]
+  },
+
+  {
     path: '/selectWorkout',
     component: () => import('layouts/MainLayout.vue'),
     children: [
