@@ -37,6 +37,22 @@ const routes = [
   },
 
   {
+    path: '/editWeight',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/EditWeightPage.vue') }
+    ]
+  },
+
+  {
+    path: '/newWeight',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/NewWeightPage.vue') }
+    ]
+  },
+
+  {
     path: '/selectWorkout',
     component: () => import('layouts/MainLayout.vue'),
     children: [
