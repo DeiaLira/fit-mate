@@ -29,6 +29,4 @@
     margin: 0 auto
     .options
         background-color: #E6D5B8
-
-  
 </style>

@@ -29,6 +29,14 @@ const routes = [
   },
 
   {
+    path: '/changeWeight',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/ChangeWeightPage.vue') }
+    ]
+  },
+
+  {
     path: '/selectWorkout',
     component: () => import('layouts/MainLayout.vue'),
     children: [
