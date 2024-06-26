@@ -1,11 +1,14 @@
 <template>
 <q-layout class="content">
   <q-page-container class="mainContent fixed-center">
-    <q-img 
+    <div class="mainImage">
+      <q-img 
       src="../assets/img/logo-fitmate.png"
       spinner-color="white"
       style="height: 300px; width: 300px;"
-    />
+      />
+    </div>
+    
     <section class="loginArea q-gutter-y-lg">
       <q-input class="userInput" standout="bg-grey-10 text-white" v-model="text" label="Usuário:" :dense="dense" />
       <q-input class="userInput" v-model="password" filled type="password" standout="bg-grey-10 text-white" label="Senha:" :dense="dense"/>
@@ -34,6 +37,9 @@ defineOptions({
   .mainContent
     max-width: 80%
     margin: 0 auto
+    .mainImage
+      text-align: center
+            
 
 .loginArea
   display: flex
