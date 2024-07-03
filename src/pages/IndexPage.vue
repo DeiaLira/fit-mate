@@ -13,7 +13,7 @@
       <q-input class="userInput" standout="bg-grey-10 text-white" v-model="text" label="Usuário:" :dense="dense" />
       <q-input class="userInput" v-model="password" filled type="password" standout="bg-grey-10 text-white" label="Senha:" :dense="dense"/>
       <a class="helperBtn q-mr-xl q-ml-xl text-h7 text-weight-light">Esqueceu a senha?</a>
-      <q-btn class="pushBtn q-pt-md q-pb-md q-pr-xl q-pl-xl q-mr-xl q-ml-xl" unelevated rounded label="Entrar" />
+      <q-btn class="pushBtn q-pt-md q-pb-md q-pr-xl q-pl-xl q-mr-xl q-ml-xl" unelevated rounded label="Entrar" to="/home"/>
     </section>
     <section class="newUserArea q-mt-xl">
       <p class="text-h7 text-weight-light">Novo por aqui?</p>

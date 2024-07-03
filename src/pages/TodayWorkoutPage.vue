@@ -16,14 +16,14 @@
                                     <p class="text-h6 text-weight-light text-center">Carga atual: 50kg</p>
                                 </div>
                                 <div class="video q-mt-xl">
-                                    <span class="material-icons" style="">play_circle_filled</span>
+                                    <span class="material-icons" to="/changeWeight">play_circle_filled</span>
                                     <p class="text-h6 text-weight-light q-pl-md q-mt-md">Vídeo da execução</p>
                                 </div>
 
                             </q-card-section>
 
                             <q-card-actions class="actionAlert">
-                                <q-btn class="actionBtn full-width q-mt-lg" unelevated rounded label="Alterar Carga"/>
+                                <q-btn class="actionBtn full-width q-mt-lg" unelevated rounded label="Alterar Carga" to="/changeWeight" />
                                 <q-btn class="actionBtn full-width q-mt-lg q-mb-lg" unelevated rounded label="Concluir exercício" v-close-popup/>
                             </q-card-actions>
                         </q-card>
